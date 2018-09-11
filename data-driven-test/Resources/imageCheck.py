@@ -10,23 +10,19 @@ class imageCheck:
             driver = webdriver.Firefox()
             driver.get("https://www.trendyol.com")
             assert "Online Alışveriş Sitesi, Türkiye’nin Trend Yolu" in driver.title
-            driver.implicitly_wait(5)
             driver.find_element_by_class_name("fancybox-close").click()
-            driver.implicitly_wait(3)
-            imgSrc = driver.find_elements_by_tag_name("img")
+            imgSrc = driver.find_elements_by_tag_name("img")   # get elements with <img> tag
             print("Images collected")
             print(imgSrc)
             for img in imgSrc:
-                responseBegin = time.time() #response begin time
-                response = requests.get(img.get_attribute("src"))
-                httpResponseStatus = response.status_code()
-                if httpResponseStatus == 200:
-                    responseEnd = time.time()
-                    logging.info(responseEnd - responseBegin)
+                responseBegin = time.time() #get request begin time
+                response = requests.get(img.get_attribute("src")) # get src of img element in list
+                httpResponseStatus = response.status_code()  # get http response code for validation
+                if httpResponseStatus == 200:     # if status_code == 200 image downloaded successfully
+                    responseEnd = time.time() # get request end time
+                    logging.info(responseEnd - responseBegin) # calculate end log the responses total time
                 else:
-                    responseEnd = time.time()
-                    logging.warning("image cannot be displayed")
-                logging.info("Image response time is :")
-                logging.info(responseEnd - responseBegin)
+                    logging.warning(img.get_attribute("src"))
+                    logging.warning("image cannot be displayed after")
             logging.info("Image statuses imported under log.html")
             return
