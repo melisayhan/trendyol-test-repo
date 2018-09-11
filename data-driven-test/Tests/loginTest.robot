@@ -4,8 +4,8 @@ Resource  ../Downloads/data-driven-test/Resources/common.robot
 Resource  ./Downloads/data-driven-test/Resources/trendyolTest.robot
 Library  ../Downloads/data-driven-test/Resources/imageCheck.py
 
-#Test Setup  common.Begin Web Test
-#Test Teardown  common.End Web Test
+Test Setup  common.Begin Web Test
+Test Teardown  common.End Web Test
 
 *** Variables ***
 
