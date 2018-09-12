@@ -28,3 +28,6 @@ Verify Error Message
 Clear Input Fields
     Clear Element Text  ${SIGN_IN_EMAIL}
     Clear Element Text  ${SIGN_IN_PASSWORD}
+    
+Verify Logged In
+    Page Should Contain Element  //*[@id="accountNavigationRoot"]/div/ul/li[1]/div[2]/span
