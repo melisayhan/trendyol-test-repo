@@ -21,7 +21,7 @@ Please Use Pyhton 3.5 or higher, last versions of robot framework, Selenium2Libr
   Tester should add valid email and password variables to this document. (&{VALID_PASSWORD_USER})
   Tester should add valid email and invalid password variables to this document. (&{INVALID_PASSWORD_USER})
 * Tests Run on loginTest.robot. (../data-driven-test/Tests)
-* imageCheck is a custom library for checking image's response code and response time. It collects elements with "img" tag from page source. After that make requests from "src" items for each "img" element. While making requests also collecting request response times and http status codes for logging them. Used "logging" library for log mechanism.
+* imageCheck is a custom library which created by **melisayhan** for checking image's response code and response time. It collects elements with "img" tag from page source. After that make requests from "src" items for each "img" element. While making requests also collecting request response times and http status codes for logging them. Used "logging" library for log mechanism.
 
 ## Running the tests
 
