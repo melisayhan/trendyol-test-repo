@@ -14,7 +14,7 @@ class imageCheck:
             imgSrc = driver.find_elements_by_tag_name("img")   # get elements with <img> tag
             print("Images collected")
             print(imgSrc)
-            for img in imgSrc:
+            for img in imgSrc:  #loop for each element in imgSrc
                 responseBegin = time.time() #get request begin time
                 response = requests.get(img.get_attribute("src")) # get src of img element in list
                 httpResponseStatus = response.status_code()  # get http response code for validation
