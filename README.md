@@ -13,6 +13,17 @@ Please Use Pyhton 3.5 or higher, last versions of robot framework, Selenium2Libr
 * [selenium2Library](http://robotframework.org/Selenium2Library/Selenium2Library.html) - Web testing Library for robot framework
 * [seleniumLibrary](https://www.seleniumhq.org/) - Web testing Library for Pyhton.(imageCheck.py)
 
+
+## Project Structure
+
+* Tester should add full directory of Resources and Library. (for instance <full directory>/data-driven-test/)
+* Datas reading from inputData.robot file. (../data-driven-test/Data)
+  Tester should add valid email and password variables to this document. (&{VALID_PASSWORD_USER})
+  Tester should add valid email and invalid password variables to this document. (&{INVALID_PASSWORD_USER})
+* Tests Run on loginTest.robot. (../data-driven-test/Tests)
+* imageCheck is a custom library for checking image's response code and response time.
+  
+
 ## Running the tests
 
 For running tests for login and image check:
