@@ -1,62 +1,10 @@
-# Project Title
+# trendyol-data-driven-test
 
-One Paragraph of project description goes here
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+Here is Login Test Scenarios and Image check tests for Trendyol web site.
 
 ## Deployment
 
-Please Use Pyhton 3.5 or higher, last versions of robot framework, Selenium2Library(named as SeleniumLibrary after v3.0), Selenium
-
-
+Please Use Pyhton 3.5 or higher, last versions of robot framework, Selenium2Library(named as SeleniumLibrary after v3.0), Selenium.
 
 ## Built With
 
@@ -65,19 +13,17 @@ Please Use Pyhton 3.5 or higher, last versions of robot framework, Selenium2Libr
 * [selenium2Library](http://robotframework.org/Selenium2Library/Selenium2Library.html) - Web testing Library for robot framework
 * [seleniumLibrary](https://www.seleniumhq.org/) - Web testing Library for Pyhton.(imageCheck.py)
 
+## Running the tests
+
+For runing tests for login and image check:
+
+- Get in the directory project directory on terminal. (cd ../data-driven-test/Tests)
+
+- Then you need to run loginTest.robot. (robot loginTest.robot)
+
+- After runing test you will find test reportes as output.xml, log.html and report.html files under the Tests file.(../data-driven-test/Tests)
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Nuray Melis Ayhan ** - *Initial work* - [melisayhan](https://github.com/melisayhan)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
