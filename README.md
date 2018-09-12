@@ -15,7 +15,7 @@ Please Use Pyhton 3.5 or higher, last versions of robot framework, Selenium2Libr
 
 ## Running the tests
 
-For runing tests for login and image check:
+For running tests for login and image check:
 
 - Get in the directory project directory on terminal. (cd ../data-driven-test/Tests)
 
