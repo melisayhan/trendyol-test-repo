@@ -20,7 +20,7 @@ Please Use Pyhton 3.5 or higher, last versions of robot framework, Selenium2Libr
 * Datas reading from inputData.robot file. (../data-driven-test/Data)
   Tester should add valid email and password variables to this document. (&{VALID_PASSWORD_USER})
   Tester should add valid email and invalid password variables to this document. (&{INVALID_PASSWORD_USER})
-  Tester should add invalid email and invalid password variables to this document.&{UNREGISTERED_USER} 
+  Tester should add invalid email and invalid password variables to this document. (&{UNREGISTERED_USER}) 
 * Tests Run on loginTest.robot. (../data-driven-test/Tests)
 * signIn.robot provides keywords(step definitions) as a POM to trendyolTest.robot and common.robot.
 * common.robot and trendyolTest.robot provides keywords as a BaseTest library to loginTest.robot.
