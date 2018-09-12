@@ -31,3 +31,4 @@ Login with blank email and password should show correct error message
 Login with valid email and password should be login
     trendyolTest.Navigate to Sign In Page
     trendyolTest.Attempt Login  ${VALID_PASSWORD_USER}
+    trendyolTest.Verify Logged In
