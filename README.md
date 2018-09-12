@@ -25,5 +25,5 @@ For runing tests for login and image check:
 
 ## Authors
 
-* **Nuray Melis Ayhan ** - *Initial work* - [melisayhan](https://github.com/melisayhan)
+* **Nuray Melis Ayhan** - *Initial work* - [melisayhan](https://github.com/melisayhan)
 
