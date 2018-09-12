@@ -20,9 +20,10 @@ Please Use Pyhton 3.5 or higher, last versions of robot framework, Selenium2Libr
 * Datas reading from inputData.robot file. (../data-driven-test/Data)
   Tester should add valid email and password variables to this document. (&{VALID_PASSWORD_USER})
   Tester should add valid email and invalid password variables to this document. (&{INVALID_PASSWORD_USER})
+  Tester should add invalid email and invalid password variables to this document.&{UNREGISTERED_USER} 
 * Tests Run on loginTest.robot. (../data-driven-test/Tests)
-* signIn.robot provides keywords(step definitions) as a POM to trendyolTest.robot.
-* common.robot provides keywords as a BaseTest library to loginTest.robot.
+* signIn.robot provides keywords(step definitions) as a POM to trendyolTest.robot and common.robot.
+* common.robot and trendyolTest.robot provides keywords as a BaseTest library to loginTest.robot.
 * imageCheck is a custom library which created by **melisayhan** for checking image's response code and response time. It collects elements with "img" tag from page source. After that make requests from "src" items for each "img" element. While making requests also collecting request response times and http status codes for logging them. Used "logging" library for log mechanism.
 
 ## Running the tests
