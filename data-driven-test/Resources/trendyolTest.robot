@@ -16,4 +16,4 @@ Verify Login Page Error Message
     signIn.Verify Error Message  ${ExpectedErrorMessage}
 
 Verify Home Page
-    signIn.Verify Logged In
+    signIn.Verify User Logged In
